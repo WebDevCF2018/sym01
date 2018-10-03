@@ -23,4 +23,12 @@ class MyFirstController extends AbstractController
         // render the view
         return $this->render('my_first/accueil.html.twig');
     }
+
+    /**
+     * @Route("/lulu", name="third")
+     */
+    public function thirdAction(){
+        // render the view
+        return $this->render('my_first/third.html.twig');
+    }
 }
