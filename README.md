@@ -51,3 +51,30 @@ creating
     templates/my_first/index.html.twig
 
 
+## create new method
+in MyfirstController class with annotations    
+
+    /**
+     * @Route("/", name="Accueil")
+     */
+    public function accueilAction(){
+            // render the view
+            return $this->render('my_first/accueil.html.twig');
+        }
+
+## create new view
+in templates/my_first create accueil.html.twig
+
+    {% extends 'base.html.twig' %}
+    {% block title %}Accueil{% endblock %}
+    {% block body %}
+        {% block titre %}Notre site{% endblock %}
+        {% block menu %}
+            <ul>
+                <li><a href="{{ path("Accueil") }}">Accueil</a></li>
+                <li><a href="{{ path("my_first") }}" title="Affichage de débugage de notre premier contrôlleur généré" target="_blank">my_first</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        {% endblock %}
+        {% block contenu %}{% endblock %}
+    {% endblock %}

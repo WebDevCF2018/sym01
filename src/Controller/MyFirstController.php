@@ -16,4 +16,11 @@ class MyFirstController extends AbstractController
             'controller_name' => 'MyFirstController',
         ]);
     }
+    /**
+     * @Route("/", name="Accueil")
+     */
+    public function accueilAction(){
+        // render the view
+        return $this->render('my_first/accueil.html.twig');
+    }
 }
