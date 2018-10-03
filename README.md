@@ -18,3 +18,6 @@ git push ori master
 
 ## creating README.md
 Procedurals actions
+
+## updating libraries
+composer update
