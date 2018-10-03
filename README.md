@@ -21,3 +21,33 @@ Procedurals actions
 
 ## updating libraries
 composer update
+
+## structure MVC:
+Frontal contoller: public/index.php
+
+Models: src/Entity
+
+Views: templates/
+
+Controllers: src/Controller/
+
+## File type best practise
+yaml => configuration
+
+Routing => annotations
+
+datas => json or other
+
+## Create first controller
+php bin/console make:controller
+MyFirstController
+
+creating    
+    
+    Your controller at
+    src/Controller/MyFirstController.php
+       
+    and Your template at         
+    templates/my_first/index.html.twig
+
+
